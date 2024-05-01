@@ -16,7 +16,7 @@ section{
     align-items: center;
     height: 100vh;
     justify-content: space-between;
-    padding: 120px;
+    padding: 200px;
  
 }
 
@@ -38,7 +38,7 @@ p,h3{
 p{
     margin-bottom: 12px;
 }
-button{
+.botao-contato{
     width: 220px;
     height: 40px;
     text-transform: uppercase;
@@ -60,7 +60,8 @@ img{
 }
 
 video{
-    width: 100vw;
+    min-width: 100%;
+    min-height: 100%;
     position: fixed;
     z-index: -2;
     top: 0;
@@ -77,11 +78,115 @@ video{
     z-index: -1;
 }
 
-.link-Whatsapp img {
-    height: 60px;
-    width: 60px;
+
+.link-Whatsapp {
     position: fixed;
-    right: 20;
-    bottom: 20;
+    right: 30px;
+    bottom: 30px;
+    cursor: pointer;
  
+} 
+
+.link-Whatsapp img{
+    height: 50px;
+    width: 50px;
+    margin: 0;
 }
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+
+}
+
+.menu img{
+    height: 54px;
+    width: 55px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a{
+    color: #FFFFFF;
+    font-weight: 50px;
+    cursor: pointer;
+
+}
+
+.menu a:hover{
+
+    font-size: 20px;
+    transition: 0.5s ease-in-out;
+
+}
+
+.botao-contato:hover{
+
+    font-size: 15px;
+    width: 250px;
+    height: 50px;
+    transition: 0.5s ease-in-out;
+
+}
+
+.div-orçamento{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 30%;
+    left: -300px;
+    padding:20px;
+    gap: 20px;
+    border-radius: 10px;
+    transition: left 1s ease-in-out;
+
+   
+}
+
+input{
+    border-radius: 5px;
+    height: 40px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: #80a8a8;
+    
+}
+
+textarea{
+    width: 270px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: #80a8a8;
+    
+}
+
+.botao-orçamento{
+
+    margin-left: 20px;
+    width: 220px;
+    height: 40px;
+    font-weight: bolder;
+    background-color: #c51111;
+    border: none;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+
+
+}
+
+.mascara-background{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10,12,16, 0.99) 15%, rgba(10,12,16, 0.7) 50%, rgba(10,12,16, 0.99) 85%);
+    
+}
+

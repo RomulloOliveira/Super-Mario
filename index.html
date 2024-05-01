@@ -7,13 +7,20 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"rel="stylesheet">
     <title>Bros Brothers</title>
 </head>
 
 <body>
+
+    <div onclick="Cliquefora()" class="mascara-background"></div>
+
+    <div class="menu"> 
+        <img src="./Assets/icon.png" alt="logotipo mario menu">
+        <a> Home</a>
+        <a> Nossos serviços</a>
+        <a> Fale Conosco</a>
+    </div>
 
 
     <section>
@@ -27,7 +34,7 @@
                 Não se preocupe, porque estamos aqui para salvar o seu dia! Somos os Encanadores
                 mais famosos do Reino dos Cogumelos - Mário & Luigi! </p>
 
-            <button> entre em contato </button>
+            <button onclick="CliqueiNoBotao()" class="botao-contato"> entre em contato </button>
 
         </div>
 
@@ -44,9 +51,25 @@
     </aside>
 
     <a href="https://api.whatsapp.com/send?phone=5519920007851&text=Preciso%20de%20ajuda%20Bros%20Brothers%20" class="link-Whatsapp">
-        <img src="./Assets/WhatsApp_Logo_PNG_Transparente_Sem_Fundo.png" alt="logo link do whatsapp">
-
+       <img src="./Assets/WhatsApp_Logo_PNG_Transparente_Sem_Fundo.png" alt="logo link do whatsapp"> 
+        
     </a>
+
+    <form class="div-orçamento" 
+            action="https://formcarry.com/s/MKyaEt7G1wK"
+            method="POST"
+            enctype="multipart/form-data">
+        
+        <input placeholder="Seu Nome" type="text" name="Nome">
+        <input placeholder="E-mail" type="email" name="E-mail">
+        <input placeholder="whatsapp" type="tel" name="Telefone">
+        <textarea placeholder="Qual o seu problema?" name="Duvida"></textarea>
+
+        <button type="submit" class="botao-orçamento"> Pedir Orçamento </button>
+
+
+
+    </form>
 
 
 
@@ -55,5 +78,6 @@
 
 
 </body>
+<script src="scripts.js"></script>
 
 </html>
