@@ -4,7 +4,7 @@ const mascara= document.querySelector(".mascara-background")
 
 function CliqueiNoBotao(){
 
-    orçamento.style.left= "50%"
+    orçamento.style.left= "40%"
     orçamento.style.transfom= "translateX(-50%)"
     mascara.style.visibility= "visible"
 
